@@ -19,7 +19,7 @@ data class Product(
     val id: Long? = null,
 
     @Column(name = "name", nullable = false) // Name is usually required
-    val name: String, // Made non-nullable as product name is essential
+    val name: String = "", // Made non-nullable as product name is essential
 
     @Column(name = "description", columnDefinition = "TEXT") // TEXT for longer descriptions
     val description: String? = null,
